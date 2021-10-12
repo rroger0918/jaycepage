@@ -16,9 +16,10 @@
   function validate() {
     let loader = document.querySelector(".loader");
     let name = document.querySelector(".username");
-    let email = document.querySelector(".email");
+    let email = document.querySelector(".email");   
     let msg = document.querySelector(".message");
     let btn = document.querySelector(".submit");
+    
 
     btn.addEventListener("click", (e) => {
       e.preventDefault();
@@ -46,7 +47,7 @@
     Swal.fire({
       icon: "Error ! ",
       title: "Oops...",
-      text: "資料不能空白呦 ~",
+      text: "The message cannot be blank ~",
     });
   }
 
@@ -54,14 +55,14 @@
     Swal.fire({
       icon: "Error !",
       title: "Oops...",
-      text: "某些地方不對勁....請您寄信給我leekuantean@gmail.com，感謝!",
+      text: "Something is wrong....Please send me a letter : leekuantean@gmail.com ,THX!",
     });
   }
 
   function success() {
     Swal.fire({
       icon: "success",
-      title: "成功寄出囉 <3",
-      text: "我會盡快回復您 ~",
+      title: "Successfully sent <3",
+      text: "I will reply you as soon as possible ~",
     });
   }
