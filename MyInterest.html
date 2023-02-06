@@ -118,7 +118,7 @@ https://templatemo.com/tm-531-reflux
                                         <a href="https://page.line.me/?accountId=760pvdld&openerPlatform=native&openerKey=talkroom%3Aheader " target="_blank "><i class="fa fa-link "></i
                       ></a>
                                         <h4>THU IM13聊天機器人</h4>
-                                        <span>因應Heroku免費專案取消，預計2023年01月轉至Azure</span>
+                                        <span>同學會 活動資訊與報名</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -213,15 +213,10 @@ https://templatemo.com/tm-531-reflux
     <script src="assets/js/custom.js "></script>
     <script src="assets/js/loftblogTUT.js "></script>
     <script type='text/javascript'>
-        (function() {
-            if (window.localStorage) {
-                if (!localStorage.getItem('firstLoad')) {
-                    localStorage['firstLoad'] = true;
-                    window.location.reload();
-                } else
-                    localStorage.removeItem('firstLoad');
-            }
-        })();
+        if (!localStorage.getItem('firstLoad')) {
+            localStorage.setItem('firstLoad', true);
+            location.reload();
+        }
     </script>
 </body>
 
