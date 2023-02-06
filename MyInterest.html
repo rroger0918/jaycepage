@@ -213,9 +213,9 @@ https://templatemo.com/tm-531-reflux
     <script src="assets/js/custom.js "></script>
     <script src="assets/js/loftblogTUT.js "></script>
     <script type='text/javascript'>
-        if (!localStorage.getItem('firstLoad')) {
-            localStorage.setItem('firstLoad', true);
-            location.reload();
+        if (!sessionStorage.getItem('firstLoad')) {
+            sessionStorage.setItem('firstLoad', true);
+            sessionStorage.reload();
         }
     </script>
 </body>
