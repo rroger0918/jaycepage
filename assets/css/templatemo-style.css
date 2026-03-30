@@ -466,6 +466,21 @@ button:hover {
     background-image: url(../images/fourth-main-icon.png);
 }
 
+/* Equal height service items */
+.section.about-me .row {
+    display: flex;
+    align-items: stretch;
+}
+
+.section.about-me .row > [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+}
+
+.section.about-me .service-item {
+    flex: 1;
+}
+
 
 /* My Work */
 
